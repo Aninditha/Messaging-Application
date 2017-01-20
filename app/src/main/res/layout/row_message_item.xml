@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/senderContainer">
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/senderMessage"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textAlignment="textStart"
+            android:background="@color/com_facebook_button_background_color_disabled" />
+
+        <ImageView
+            android:layout_height="150dp"
+            android:src="@drawable/com_facebook_profile_picture_blank_square"
+            android:id="@+id/senderImage"
+            android:layout_width="330dp" />
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/senderTime"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textAlignment="textStart"
+            android:background="@color/com_facebook_button_background_color_disabled" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myContainer">
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/myMessage"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textAlignment="textEnd"
+            android:layout_gravity="right"
+            android:background="@color/com_facebook_button_send_background_color"
+            tools:ignore="RtlCompat" />
+
+        <ImageView
+            android:layout_height="150dp"
+            android:src="@drawable/com_facebook_profile_picture_blank_portrait"
+            android:id="@+id/myImage"
+            android:layout_gravity="right"
+            android:layout_width="330dp" />
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/myTime"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textAlignment="textEnd"
+            android:layout_gravity="right"
+            android:background="@color/com_facebook_button_send_background_color"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+</LinearLayout>
